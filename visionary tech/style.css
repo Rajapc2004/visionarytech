@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+}
+
+.feature-box {
+    transition: transform 0.8s ease;
+}
+
+.feature-box:hover {
+    transform: scale(1.05);
+}
+#navbar :hover{
+    color:rgb(180, 19, 172);
+}
+
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        height: auto;
+        padding: 50px 0;
+    }
+}

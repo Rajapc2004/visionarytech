@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyProduct Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="ar">
+  
+    <!-- Header -->
+    <header class="bg-white shadow">
+        <nav class="container mx-auto flex justify-between items-center p-4">
+            <div class="text-2xl font-bold">MyProduct</div>
+            <ul class="flex space-x-6">
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="flex items-center justify-center h-screen bg-green-500 text-white">
+        <div class="text-center">
+            <h1 class="text-5xl font-bold mb-4">Revolutionize Your Productivity</h1>
+            <p class="mb-6">Discover how our tool can help you achieve more in less time.</p>
+            <button id="cta-button" class="bg-white text-blue-500 py-2 px-4 rounded">Sign Up Now</button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="container mx-auto py-20">
+        <h2 class="text-center text-4xl font-bold mb-8">Features</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div class="feature-box bg-white p-6 rounded shadow-md">
+                <h3 class="text-xl font-semibold mb-2">Feature One</h3>
+                <p>Detail about feature one.</p>
+            </div>
+            <div class="feature-box bg-white p-6 rounded shadow-md">
+                <h3 class="text-xl font-semibold mb-2">Feature Two</h3>
+                <p>Detail about feature two.</p>
+            </div>
+            <div class="feature-box bg-white p-6 rounded shadow-md">
+                <h3 class="text-xl font-semibold mb-2">Feature Three</h3>
+                <p>Detail about feature three.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="container mx-auto py-20">
+        <h2 class="text-center text-4xl font-bold mb-8">What Our Users Say</h2>
+        <div class="testimonial-box bg-white p-6 rounded shadow-md">
+            <p>"This product changed my life!"</p>
+            <p class="font-bold">- Happy Customer</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-4">
+        <p>&copy; 2024 MyProduct</p>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center hidden">
+        <div class="bg-white p-6 rounded shadow-md">
+            <h2 class="text-xl font-bold mb-4">Sign Up</h2>
+            <form id="sign-up-form">
+                <input type="email" id="email" placeholder="Email" required class="border p-2 w-full mb-4" />
+                <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded">Submit</button>
+                <button id="close-modal" type="button" class="mt-2 text-gray-500">Close</button>
+            </form>
+        </div>
+    </div>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
